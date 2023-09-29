@@ -6,4 +6,16 @@ function lang_btn_event(el) {
   } else {
     text.innerHTML = 'en'
   }
-}
+};
+document.addEventListener("DOMContentLoaded", () => {
+  let parrent = document.querySelectorAll('.animated-bg#line');
+
+  for (line of parrent) {
+    let caps = line.querySelectorAll('object');
+    console.log(caps);
+    for(el of caps) {
+      line.appendChild(el.cloneNode(true));
+    };
+  };
+});
+

@@ -129,7 +129,8 @@ section#home {
     all: revert;
     position: absolute;
     top: -8rem;
-    z-index: 1;
+    z-index: 20;
+    pointer-events: none;
 }
 .bg_light:nth-child(1) {
     left: 0;
@@ -155,7 +156,7 @@ section#home {
 }
 
 .gradient {
-    z-index: -1;
+    z-index: -10;
 
     position: absolute;
     left: 0;
@@ -163,7 +164,7 @@ section#home {
     top: 0;
     bottom: 0;
     background: linear-gradient( 0deg, 
-    #110A1D 16%, 
+    #110A1D 5%, 
     rgba(17, 10, 29, .4) 74%,
     #110A1D 90% );
 }
@@ -174,13 +175,9 @@ section#home {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    z-index: -2;
+    z-index: -20;
 }
 
-.animated-bg .left path{
-    transform: scale(1 -1)
-
-}
 
 .wrapper .animated-bg div{
     display: flex;
@@ -220,13 +217,15 @@ section#home {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    z-index: 30;
 }
 
 .banner .banner__title {
     color:#fff;
     text-transform: uppercase;
     font-size: 6rem;
-    line-height: 6rem; /* 100% */
+    line-height: 6rem;
     font-style: normal;
     font-weight: 500;
 }
@@ -238,7 +237,7 @@ section#home {
 .banner .banner__text {
     color: #999999;
     font-size: 2.2rem;
-    line-height: 2.6rem; /* 100% */
+    line-height: 2.6rem;
     font-style: normal;
     font-weight: 500;
 }
@@ -251,7 +250,7 @@ section#home {
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 32px; /* 133.333% */
+    line-height: 32px;
     text-transform: uppercase;
     border-radius: 48px;
     padding: 1rem 4rem;
@@ -264,6 +263,8 @@ section#home {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    z-index: 30;
 }
 
 .blog .blog__title {
@@ -445,3 +446,118 @@ footer {
         transform: translateY(0);
     }
 }
+
+
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .container {
+        flex-direction: column;
+    }
+
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+    .navbar__links,
+    .navbar__btn,
+    #lang_btn_text {
+        display: none !important;
+    }
+
+    .lgn_btn {
+        display: block !important;
+    }
+    .wrapper {
+        display: none !important;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .banner {
+        align-items: center;
+    }
+
+
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .container {
+        flex-direction: column;
+    }
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .navbar {
+        padding: 0.5rem !important;
+        width: 95% !important;
+        height: 3rem;
+    }
+
+    .navbar__logo {
+        height: 1rem !important;
+    }
+
+    .navbar__links {
+        display: none !important;
+    }
+
+
+    /* CSS */
+    
+  }
