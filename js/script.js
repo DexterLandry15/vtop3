@@ -8,7 +8,7 @@ function lang_btn_event(el) {
   }
 };
 document.addEventListener("DOMContentLoaded", () => {
-  let parrent = document.querySelectorAll('.animated-bg#line');
+  let parrent = document.querySelectorAll('.animated-bg #line');
 
   for (line of parrent) {
     let caps = line.querySelectorAll('object');
