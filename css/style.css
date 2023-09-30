@@ -612,19 +612,20 @@ footer {
 
 @keyframes scroll-right {
     0% {
-        transform: translateX(0);
+        transform: translateX(calc(-800px * 2));
     }
     100% {
-        transform: translateX(calc(-800px * 2));
+        transform: translateX(0);
     }
 }
 
 @keyframes scroll-left {
+
     0% {
-        transform: translateX(calc(-800px * 2));
+        transform: translateX(0);
     }
     100% {
-        transform: translateX(0);
+        transform: translateX(calc(-800px * 2));
     }
 }
 
