@@ -61,10 +61,36 @@
                     <a href="#" class="navbar__btn">
                         sign up
                     </a>
+                    <div class="navbar__mobile__btn">
+                        <div class="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
             </div>
         </nav>
     </header>
 
+    <div class="navbar-mobile" id="test">
+        <div class="navbar-mobile__wrapper">
+            <ul class="navbar-mobile__links">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Commissions</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+            <ul class="navbar-mobile__btns">
+                <li><a href="#">log in</a></li>
+                <li><a href="#">sign up</a></li>
+            </ul>
+        </div>
+    </div>
+    
     <section id="home">
         <object class="bg_light" type="image/svg">
             <svg xmlns="http://www.w3.org/2000/svg" width="1126" height="1265" viewBox="0 0 1126 1265" fill="none">
@@ -125,7 +151,8 @@
                 <div class="animated-bg">
                     <div class="left" id="line">
                         <object data="assets/caps/Shield.svg" type="image/svg+xml"></object>
-                        <object data="assets/caps/$.svg" type="image/svg+xml"></object>
+                        <object id="long_cap_vertical" data="assets/caps/$.svg" type="image/svg+xml"></object>
+                        <object id="long_cap_horizontal" data="assets/caps/$_long_h.svg" type="image/svg+xml"></object>
                         <object data="assets/caps/Soccer_blue.svg" type="image/svg+xml"></object>
                         <object data="assets/caps/M_green.svg" type="image/svg+xml"></object>
                     </div>
@@ -133,11 +160,13 @@
                         <object data="assets/caps/M_light.svg" type="image/svg+xml"></object>
                         <object data="assets/caps/Timer.svg" type="image/svg+xml"></object>
                         <object data="assets/caps/Crown.svg" type="image/svg+xml"></object>
-                        <object data="assets/caps/World.svg" type="image/svg+xml"></object>
+                        <object id="long_cap_vertical" data="assets/caps/World.svg" type="image/svg+xml"></object>
+                        <object id="long_cap_horizontal" data="assets/caps/World_long_h.svg" type="image/svg+xml"></object>
 
                     </div>
                     <div class="right" id="line">
-                        <object data="assets/caps/Crown_long.svg" type="image/svg+xml"></object>
+                        <object id="long_cap_vertical" data="assets/caps/Crown_long.svg" type="image/svg+xml"></object>
+                        <object id="long_cap_horizontal" data="assets/caps/Crown_long_h.svg" type="image/svg+xml"></object>
                         <object data="assets/caps/M_blue.svg" type="image/svg+xml"></object>
                         <object data="assets/caps/Shield.svg" type="image/svg+xml"></object>
                         <object data="assets/caps/Soccer.svg" type="image/svg+xml"></object>
@@ -148,7 +177,7 @@
             <div class="blog">
                 <h3 class="blog__title">Blog</h3>
                 <div class="blog__container">
-                    <div class="blog__posts"> <!--  data-simplebar data-simplebar-auto-hide="false" -->
+                    <div class="blog__posts" data-simplebar data-simplebar-auto-hide="false" > <!--  -->
                         <div class="blog__post">
                             <p>Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
                             <span>10.02.2023</span>
